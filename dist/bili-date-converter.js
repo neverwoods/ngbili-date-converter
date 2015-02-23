@@ -13,8 +13,6 @@
                     viewFormat = values.split(' to ')[0];
                     modelFormat = values.split(' to ')[1];
 
-                    console.log('modelFormat', modelFormat, 'viewFormat', viewFormat);
-
                     var convertDate = function (date, format) {
                         var arrDate = date.split('-'),
                             year, month, day;
@@ -38,18 +36,14 @@
 
                     ngModelController.$formatters.push(function (value) {
                         if (value) {
-                            console.log('Format this value: ', value);
-                            // American date format, convert to EU format
                             return convertDate(value, viewFormat);
                         } else {
-                            // EU format, continue.
                             return value;
                         }
                     });
 
                     ngModelController.$parsers.push(function (value) {
                         if (value) {
-                            console.log('Parse this value: ', value, modelFormat, convertDate(value, modelFormat));
                             return convertDate(value, modelFormat);
                         } else {
                             return value;

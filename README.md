@@ -2,6 +2,16 @@
 Date conversion directive for AngularJS. Use this directive to dynamically
 convert date values between model and view.
 
+## Installation
+
+Install using bower:
+
+```sh
+$ bower install --save bili-date-converter
+```
+
+Add the `BiliDateConverter` module to your Angular module definition as a dependency.
+
 ## Use case
 
 Say you have a date input field where you want the user to input a date

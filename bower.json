@@ -1,0 +1,30 @@
+{
+  "name": "bili-date-converter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/neverwoods/ngbili-date-converter",
+  "authors": [
+    "Robin van Baalen <robin@neverwoods.com>"
+  ],
+  "description": "Convert date values between model and view",
+  "main": "dist/bili-date-converter.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "bili",
+    "date",
+    "converter",
+    "date",
+    "model",
+    "view"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

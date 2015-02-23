@@ -5,15 +5,15 @@ convert date values between model and view.
 ## Use case
 
 Say you have a date input field where you want the user to input a date
-using the format 'dd-MM-yyyy'. But at the same time, your back-end system
-requires an input date with the format 'yyyy-MM-dd'.
+using the format `dd-MM-yyyy`. But at the same time, your back-end system
+requires an input date with the format `yyyy-MM-dd`.
 
-You could go ahead and force the user to input 'yyyy-MM-dd' but that would be
-an unwanted situation if the user is used to the 'dd-MM-yyyy' format in their
+You could go ahead and force the user to input `yyyy-MM-dd` but that would be
+an unwanted situation if the user is used to the `dd-MM-yyyy` format in their
 country.
 
-Using this directive, you can allow the user to enter the 'dd-MM-yyyy' format
-and automatically have it converted to 'yyyy-MM-dd' or any other format for that
+Using this directive, you can allow the user to enter the `dd-MM-yyyy` format
+and automatically have it converted to `yyyy-MM-dd` or any other format for that
 matter.
 
 ## Example usage
@@ -54,6 +54,8 @@ instead of
 
 as you might expect.
 
+## Format usage
+You can convert from and to any format defined by the [format elements of the Angular date filter](https://docs.angularjs.org/api/ng/filter/date)
 
 # Happy coding
 
